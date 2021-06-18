@@ -1,4 +1,5 @@
-const Vue = require('vue')
+// Fix an issue in the official repo where the below vue import doesn't match up with our ES syntax
+const Vue = require('vue').default;
 const { getRootModuleName } = require('./rootModuleName')
 const hash = require('object-hash')
 const isEqual = require('lodash.isequal')
